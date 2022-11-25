@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
+    //shooting
     [SerializeField]
     private Rigidbody2D bullet;
 
@@ -12,16 +13,23 @@ public class Fire : MonoBehaviour
 
     private float bulletSpeed = 500f;
 
+    //switching between Shotgun and Pistol
+
     string currentWeaponName;
 
+    //firerate
     private float fireRate = 0.4f;
     private float nextFire = 0f;
     private float fireRateShotgun = 1f;
 
+    //Reload
+
+    private int ammoAmount;
+
     private void Start()
     {
         currentWeaponName = gameObject.name.Substring(0, name.IndexOf("_"));
-
+        ammoAmount = 0;
     }
     private void Update()
     {
@@ -29,21 +37,32 @@ public class Fire : MonoBehaviour
         {
             WeaponFire(currentWeaponName);
         }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            ammoAmount = 12;
+        }
     }
     private void WeaponFire(string weaponName)
     {
-        if (weaponName == "Pistol" && Time.time > nextFire)
+        if (weaponName == "Pistol" && Time.time > nextFire && ammoAmount > 0)
         {
             nextFire = Time.time + fireRate;
             var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
             spawnedBullet.AddForce(barrel.up * bulletSpeed);
+            ammoAmount -= 1;
         }
-        else if (weaponName == "Shotgun" && Time.time > nextFire)
+        else if (weaponName == "Shotgun" && Time.time > nextFire && ammoAmount > 0)
         {
+            //I lose one ammo
+            ammoAmount -= 3;
+            //Shotgun firerate
+            nextFire = Time.time + fireRateShotgun;
+
+            //three bullets are spawned
             for (int i = 0; i <= 2; i++)
             {
                 var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
-                nextFire = Time.time + fireRateShotgun;
 
                 switch (i)
                 {

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6162157231948090893, guid: 19c612e1dc162894bbb6e1814e9d5a74, type: 3}
   barrel: {fileID: 8262262534889934690}
+  ammo: []
 --- !u!1 &8262262534889934685
 GameObject:
   m_ObjectHideFlags: 0
