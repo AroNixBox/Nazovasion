@@ -14,6 +14,10 @@ public class Fire : MonoBehaviour
 
     string currentWeaponName;
 
+    private float fireRate = 0.4f;
+    private float nextFire = 0f;
+    private float fireRateShotgun = 1f;
+
     private void Start()
     {
         currentWeaponName = gameObject.name.Substring(0, name.IndexOf("_"));
@@ -28,16 +32,18 @@ public class Fire : MonoBehaviour
     }
     private void WeaponFire(string weaponName)
     {
-        if (weaponName == "Pistol")
+        if (weaponName == "Pistol" && Time.time > nextFire)
         {
+            nextFire = Time.time + fireRate;
             var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
             spawnedBullet.AddForce(barrel.up * bulletSpeed);
         }
-        else if (weaponName == "Shotgun")
+        else if (weaponName == "Shotgun" && Time.time > nextFire)
         {
             for (int i = 0; i <= 2; i++)
             {
                 var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
+                nextFire = Time.time + fireRateShotgun;
 
                 switch (i)
                 {
