@@ -37,6 +37,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            ScoreManager.instance.AddPoint();
             //Add death animation here
             //animator.SetTrigger("death");
             GetComponent<BoxCollider2D>().enabled = false;
