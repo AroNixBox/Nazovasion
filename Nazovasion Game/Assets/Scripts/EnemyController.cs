@@ -5,20 +5,22 @@ using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
-    Transform target;
+
+    //collision enemy shit Transform target;
     public float speed;
     PlayerController player;
     public int enemyHP = 100;
     //public Animator animator;
     public Slider enemyHealthBar;
+
+    GameObject target;
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        //this line ignores collision with enemy, but when I enable, attack system doesnt work... target = GameObject.FindGameObjectWithTag("Player").transform;
+        //this also Physics2D.IgnoreCollision(target.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         player = FindObjectOfType<PlayerController>();
-        Physics2D.IgnoreCollision(target.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         enemyHealthBar.value = enemyHP;
     }
-
 
     void Update()
     {
