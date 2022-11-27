@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class EnemyController : MonoBehaviour
     PlayerController player;
     public int enemyHP = 100;
     //public Animator animator;
+    public Slider enemyHealthBar;
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         player = FindObjectOfType<PlayerController>();
         Physics2D.IgnoreCollision(target.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        enemyHealthBar.value = enemyHP;
     }
 
 
@@ -24,7 +27,7 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         enemyHP -= damageAmount;
-
+        enemyHealthBar.value = enemyHP;
         if (enemyHP > 0)
         {
             //Add get hit animation here!!!
