@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 moveDirection;
     private Vector2 mousePosition;
+    public 
 
 
     void Update()

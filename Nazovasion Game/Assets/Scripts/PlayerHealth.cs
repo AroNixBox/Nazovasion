@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Slider playerHealthBar;
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
 
     private void Start()
     {
         health = maxHealth;
+    }
+    private void Update()
+    {
+        playerHealthBar.value = health;
     }
     public void UpdateHealth(float mod)
     {
