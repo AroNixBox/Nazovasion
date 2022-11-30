@@ -14,23 +14,19 @@ public class EnemyAttack : MonoBehaviour
     {
         refScript = GetComponent<EnemyController>();
     }
-    private void OnCollisionStay2D(Collision2D col)
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (col.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && attackSpeed <= canAttack)
         {
-            if (attackSpeed <= canAttack)
-            {
-                Debug.Log("itsWorking!");
-                col.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
-                canAttack = 0f;
-                StartCoroutine("DisableScript");
-            }
-            else
-            {
-                canAttack += Time.deltaTime;
-            }
+            Debug.Log("itsWorking!");
+            other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+            StartCoroutine("DisableScript");
+            canAttack = 0f;
         }
-
+        else
+        {
+            canAttack += Time.deltaTime;
+        }
     }
     IEnumerator DisableScript ()
     {

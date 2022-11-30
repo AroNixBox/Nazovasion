@@ -664,6 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 10
   attackSpeed: 1
+  canAttack: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +1998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 10
   attackSpeed: 1
+  canAttack: 0.2
 --- !u!114 &1616639740
 MonoBehaviour:
   m_ObjectHideFlags: 0
