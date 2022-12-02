@@ -37,10 +37,13 @@ public class Fire : MonoBehaviour
         {
             WeaponFire(currentWeaponName);
         }
-
-        if (Input.GetKey(KeyCode.R))
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Ammo")
         {
-            ammoAmount = 12;
+            ammoAmount += 1;
+            Destroy(collision.gameObject);
         }
     }
     private void WeaponFire(string weaponName)

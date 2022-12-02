@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8262262534870093035}
   - component: {fileID: 8262262534870093033}
   - component: {fileID: 8262262534870093032}
+  - component: {fileID: 2689515443342693196}
   m_Layer: 0
   m_Name: Pistol_
   m_TagString: Untagged
@@ -100,7 +101,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6162157231948090893, guid: 19c612e1dc162894bbb6e1814e9d5a74, type: 3}
   barrel: {fileID: 8262262534889934690}
-  ammo: []
+--- !u!58 &2689515443342693196
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8262262534870093034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.392237, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.96843773
 --- !u!1 &8262262534889934685
 GameObject:
   m_ObjectHideFlags: 0
