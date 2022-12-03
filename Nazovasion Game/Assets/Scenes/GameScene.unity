@@ -1531,7 +1531,6 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 1299208536}
   lastPost: {x: 0, y: 0}
-  pistol_: {fileID: 8262262534870093034, guid: 9b69aa7bae5a16f409029a5397838921, type: 3}
 --- !u!50 &1299208536
 Rigidbody2D:
   serializedVersion: 4

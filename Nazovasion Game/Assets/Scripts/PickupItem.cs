@@ -27,10 +27,10 @@ public class PickupItem : MonoBehaviour
             return;
         }
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        //if (distance < 0.1f)
-        //{
-        //    Destroy(gameObject);
-        //}
+        if (distance < 0.1f)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

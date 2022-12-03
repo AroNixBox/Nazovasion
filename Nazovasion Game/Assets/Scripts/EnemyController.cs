@@ -37,6 +37,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            ScoreManager.instance.AddPoint();
             //Add death animation here
             //animator.SetTrigger("death");
             GetComponent<BoxCollider2D>().enabled = false;
@@ -44,10 +45,5 @@ public class EnemyController : MonoBehaviour
             //remove this line, if we want the corpses of the zombies to stack on the ground...
             Object.Destroy(gameObject, 3.0f);
         }
-        if (enemyHP == 0)
-        {
-            ScoreManager.instance.AddPoint();
-        }
-
     }
 }

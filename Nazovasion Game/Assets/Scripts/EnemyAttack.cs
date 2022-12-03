@@ -18,6 +18,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && attackSpeed <= canAttack)
         {
+            Debug.Log("itsWorking!");
             other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
             StartCoroutine("DisableScript");
             canAttack = 0f;
