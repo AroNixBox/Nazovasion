@@ -32,7 +32,7 @@ public class WeaponControl : MonoBehaviour
                 weapon = Instantiate(Resources.Load("Prefabs/Pistol_"), transform.position, transform.rotation) as GameObject;
                 weapon.transform.SetParent(gameObject.transform);
                 //position of the weapon regarding to starting position of player. CHANGE HERE
-                weapon.transform.localPosition = new Vector3(0.5f, 0f, 0f);
+                weapon.transform.localPosition = new Vector3(0.5f, 2.65f, 0f);
                 weapon.GetComponent<Renderer>().sortingOrder = gameObject.GetComponent<Renderer>().sortingOrder + 1;
                 whichWeaponSelected += 1;
                 break;
