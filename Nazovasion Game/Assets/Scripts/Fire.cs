@@ -40,7 +40,7 @@ public class Fire : MonoBehaviour
 
         if (Input.GetKey(KeyCode.R))
         {
-            ammoAmount = 12;
+            StartCoroutine(WaitForSeconds());
         }
     }
     private void WeaponFire(string weaponName)
@@ -78,5 +78,10 @@ public class Fire : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator WaitForSeconds()
+    {
+        yield return new WaitForSeconds(3);
+        ammoAmount = 12;
     }
 }
