@@ -15,11 +15,15 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             collision.GetComponent<EnemyController>().TakeDamage(25);
         }
+        if (collision.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
     
     private void Destroy()
     {
-        Object.Destroy(gameObject, 1.0f);
+        Object.Destroy(gameObject, 0.2f);
     }
 
 }
