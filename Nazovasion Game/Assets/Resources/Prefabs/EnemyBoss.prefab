@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 5603928706473751667}
   - component: {fileID: 5603928706473751676}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: EnemyBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,8 +65,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5603928706473751673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9705, y: 3.2405, z: 0}
-  m_LocalScale: {x: 0.2209, y: 0.2209, z: 0.2209}
+  m_LocalPosition: {x: 2.36, y: 3.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5603928707500805940}
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c32c7a149dc4b41aacf3874a401c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.75
+  speed: 1
   enemyHP: 100
   enemyHealthBar: {fileID: 5603928707160554855}
 --- !u!114 &5603928706473751667
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 10
-  attackSpeed: 1
+  attackSpeed: 0.2
 --- !u!61 &5603928706473751676
 BoxCollider2D:
   m_ObjectHideFlags: 0
