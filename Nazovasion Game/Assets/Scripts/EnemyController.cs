@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
-
-    //collision enemy shit Transform target;
-    public float speed;
     PlayerController player;
     public int enemyHP = 100;
     //public Animator animator;
@@ -20,11 +17,6 @@ public class EnemyController : MonoBehaviour
         //this also Physics2D.IgnoreCollision(target.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         player = FindObjectOfType<PlayerController>();
         enemyHealthBar.value = enemyHP;
-    }
-
-    void Update()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
     public void TakeDamage(int damageAmount)
     {

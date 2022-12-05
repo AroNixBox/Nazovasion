@@ -5,33 +5,45 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     EnemyController refScript;
+    PlayerHealth playerHealth;
+    [SerializeField] GameObject player;
 
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
 
+    public float speed;
+    public Transform target;
+    public float minimumDistance;
+
     private void Start()
     {
         refScript = GetComponent<EnemyController>();
+        playerHealth = player.GetComponent<PlayerHealth>();
     }
-    private void OnCollisionStay2D(Collision2D other)
+    private void Update()
     {
-        if (other.gameObject.tag == "Player" && attackSpeed <= canAttack)
+        if (Vector2.Distance(transform.position, target.position) > minimumDistance)
         {
-            Debug.Log("itsWorking!");
-            other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
-            StartCoroutine("DisableScript");
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+        if(Vector2.Distance(transform.position, target.position) < minimumDistance && attackSpeed <= canAttack)
+        {
+            playerHealth.UpdateHealth(-attackDamage);
             canAttack = 0f;
+            StartCoroutine(DisableScript());
         }
         else
         {
             canAttack += Time.deltaTime;
         }
     }
-    IEnumerator DisableScript ()
+
+    //remove this if I want the enemy to keep following instantly.
+    IEnumerator DisableScript()
     {
-        refScript.enabled = false;
+        this.enabled = false;
         yield return new WaitForSeconds(1f);
-        refScript.enabled = true;
+        this.enabled = true;
     }
 }
