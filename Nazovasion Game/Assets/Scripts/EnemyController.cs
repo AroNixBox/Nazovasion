@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
+    EnemyAttack enemyAttack;
     PlayerController player;
     public int enemyHP = 100;
     //public Animator animator;
@@ -17,6 +18,7 @@ public class EnemyController : MonoBehaviour
         //this also Physics2D.IgnoreCollision(target.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         player = FindObjectOfType<PlayerController>();
         enemyHealthBar.value = enemyHP;
+        enemyAttack = GetComponent<EnemyAttack>();
     }
     public void TakeDamage(int damageAmount)
     {
@@ -33,7 +35,7 @@ public class EnemyController : MonoBehaviour
             //Add death animation here
             //animator.SetTrigger("death");
             GetComponent<BoxCollider2D>().enabled = false;
-            this.enabled = false;
+            enemyAttack.enabled = false;
             //remove this line, if we want the corpses of the zombies to stack on the ground...
             Object.Destroy(gameObject, 3.0f);
         }
