@@ -15,6 +15,11 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             collision.GetComponent<EnemyController>().TakeDamage(25);
         }
+        if (collision.tag == "RangedEnemy")
+        {
+            Destroy(gameObject);
+            collision.GetComponent<EnemyController>().TakeDamage(25);
+        }
         if (collision.tag == "Wall")
         {
             Destroy(gameObject);
