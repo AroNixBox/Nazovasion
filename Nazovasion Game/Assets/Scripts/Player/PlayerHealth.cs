@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -11,10 +12,13 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float keys = 0f;
     [SerializeField] private float maxHealth = 100f;
 
+    public TMP_Text keyDisplay;
+
     private void Start()
     {
         keys = 0f;
         health = maxHealth;
+        KeyCollect();
     }
     private void Update()
     {
@@ -29,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.tag == "Key")
         {
             keys += 1f;
+            KeyCollect();
         }
     }
 
@@ -46,5 +51,10 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player Respawn");
             SceneManager.LoadScene("GameScene");
         }
+    }
+
+    public void KeyCollect()
+    {
+        keyDisplay.text = "Keys: " + keys;
     }
 }
