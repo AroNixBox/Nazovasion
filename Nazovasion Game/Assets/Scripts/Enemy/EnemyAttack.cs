@@ -18,6 +18,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void Start()
     {
+        this.enabled = false;
         refScript = GetComponent<EnemyController>();
         playerHealth = player.GetComponent<PlayerHealth>();
     }
