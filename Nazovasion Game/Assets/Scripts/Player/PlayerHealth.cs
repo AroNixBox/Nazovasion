@@ -8,16 +8,30 @@ public class PlayerHealth : MonoBehaviour
 {
     public Slider playerHealthBar;
     private float health = 0f;
+    [SerializeField] private float keys = 0f;
     [SerializeField] private float maxHealth = 100f;
 
     private void Start()
     {
+        keys = 0f;
         health = maxHealth;
     }
     private void Update()
     {
         playerHealthBar.value = health;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Door" && keys == 5f)
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.tag == "Key")
+        {
+            keys += 1f;
+        }
+    }
+
     public void UpdateHealth(float mod)
     {
         health += mod;

@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - RangedEnemy
   - Attention
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX
