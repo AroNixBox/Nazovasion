@@ -12,10 +12,12 @@ public class PatrolEnemy : MonoBehaviour
     private int randomSpot;
 
     EnemyAttack enemyAttack;
+    RangeEnemyAttack rangeEnemyAttack;
 
     private void Start()
     {
         enemyAttack = GetComponent<EnemyAttack>();
+        rangeEnemyAttack = GetComponent<RangeEnemyAttack>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
     }
@@ -40,8 +42,17 @@ public class PatrolEnemy : MonoBehaviour
     {
         if (collision.tag == "Attention")
         {
-            enemyAttack.enabled = true;
-            this.enabled = false;
+            if (tag == "Enemy")
+            {
+                enemyAttack.enabled = true;
+                this.enabled = false;
+            }
+            if (tag == "RangedEnemy")
+            {
+                rangeEnemyAttack.enabled = true;
+                this.enabled = false;
+            }
+           
         }
     }
 }
