@@ -38,9 +38,13 @@ public class Fire : MonoBehaviour
             WeaponFire(currentWeaponName);
         }
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.R) && tag == "Pistol")
         {
-            StartCoroutine(WaitForSeconds());
+            StartCoroutine(WaitForSecondsPistol());
+        }
+        if (Input.GetKey(KeyCode.R) && tag == "Shotgun")
+        {
+            StartCoroutine(WaitForSecondsShotgun());
         }
     }
     private void WeaponFire(string weaponName)
@@ -79,7 +83,12 @@ public class Fire : MonoBehaviour
             }
         }
     }
-    IEnumerator WaitForSeconds()
+    IEnumerator WaitForSecondsPistol()
+    {
+        yield return new WaitForSeconds(1);
+        ammoAmount = 12;
+    }
+    IEnumerator WaitForSecondsShotgun()
     {
         yield return new WaitForSeconds(3);
         ammoAmount = 12;
