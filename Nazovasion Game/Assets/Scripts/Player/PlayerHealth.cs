@@ -14,6 +14,9 @@ public class PlayerHealth : MonoBehaviour
 
     public TMP_Text keyDisplay;
 
+    //GameOver
+    public GameObject gameOver;
+
     private void Start()
     {
         keys = 0f;
@@ -48,8 +51,8 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
-            Debug.Log("Player Respawn");
-            SceneManager.LoadScene("GameScene");
+            gameOver.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
