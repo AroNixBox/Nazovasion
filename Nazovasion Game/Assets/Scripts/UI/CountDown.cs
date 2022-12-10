@@ -9,9 +9,11 @@ public class CountDown : MonoBehaviour
     //public GameObject objectToActivateAndDeactivate;
     //for timer
     float currentTime = 0f;
-    float startingTime = 10f;
+    float startingTime = 250f;
 
     [SerializeField] TMP_Text countdownText;
+
+    public GameObject youLost;
 
     public float CurrentTime
     {
@@ -29,7 +31,12 @@ public class CountDown : MonoBehaviour
         currentTime -= 1 * Time.deltaTime;
         countdownText.text = currentTime.ToString("0.0");
 
-        if (currentTime <= 3)
+        if (currentTime <= 80)
+        {
+            countdownText.color = Color.yellow;
+        }
+
+        if (currentTime <= 30)
         {
             countdownText.color = Color.red;
         }
@@ -40,9 +47,7 @@ public class CountDown : MonoBehaviour
 
         if (currentTime <= 0)
         {
-            //want the game to stop >>> Time.timeScale = 0;
-            //add here what you want to happen when time is over. For example we passed the level, Load new scene... Remember to use Using
-            //GameOverScreen objectToActivateAndDeactivate.SetActive(true);
+            youLost.SetActive(true);
         }
     }
 }

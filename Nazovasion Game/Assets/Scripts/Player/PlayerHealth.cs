@@ -17,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     //GameOver
     public GameObject gameOver;
 
+    //YouLost
+    public GameObject youLost;
+
     private void Start()
     {
         keys = 0f;
@@ -51,13 +54,20 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
-            gameOver.SetActive(true);
             Time.timeScale = 0f;
+            youLost.SetActive(true);
         }
     }
 
     public void KeyCollect()
     {
         keyDisplay.text = "Keys: " + keys;
+    }
+    
+    IEnumerator GameIsEnding ()
+    {
+        yield return new WaitForSeconds(1);
+        gameOver.SetActive(true);
+
     }
 }
