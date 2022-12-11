@@ -36,8 +36,29 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
             lastPost = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        }
+        else
+        {
             ChangeAnimationState(PLAYER_IDLE);
         }
+
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            ChangeAnimationState(PLAYER_WALK_UP);
+        }
+        else if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            ChangeAnimationState(PLAYER_WALK_UP);
+        }
+         else if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            ChangeAnimationState(PLAYER_WALK_UP);
+        }
+        else if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            ChangeAnimationState(PLAYER_WALK_UP);
+        }
+
     }
     private void FixedUpdate()
     {
@@ -54,11 +75,12 @@ public class PlayerController : MonoBehaviour
         if (currentAnimState == newState)
         {
             return;
+        }
 
             //Play new anitmation
             animator.Play(newState);
 
             currentAnimState = newState;
-        }
+        
     }
 }
