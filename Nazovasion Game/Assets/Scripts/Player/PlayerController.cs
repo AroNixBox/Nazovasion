@@ -10,6 +10,20 @@ public class PlayerController : MonoBehaviour
     private Vector2 mousePosition;
     public Vector2 lastPost;
 
+    //Animation and states
+
+    Animator animator;
+    string currentAnimState;
+    const string PLAYER_IDLE = "Player_Idle";
+    const string PLAYER_WALK_LEFT = "Player_Walk_Left";
+    const string PLAYER_WALK_RIGHT = "Player_Walk_Right";
+    const string PLAYER_WALK_UP = "Player_Walk_Up";
+    const string PLAYER_WALK_DOWN = "Player_Walk_Down";
+
+    private void Start()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
     void Update()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -22,7 +36,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
             lastPost = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-            Debug.Log("THIS IS WORKING FINE");
+            ChangeAnimationState(PLAYER_IDLE);
         }
     }
     private void FixedUpdate()
@@ -32,5 +46,19 @@ public class PlayerController : MonoBehaviour
         Vector2 aimDirection = mousePosition - rb.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = aimAngle;
+    }
+
+    void ChangeAnimationState(string newState)
+    {
+        //stop animation from interrupting itself
+        if (currentAnimState == newState)
+        {
+            return;
+
+            //Play new anitmation
+            animator.Play(newState);
+
+            currentAnimState = newState;
+        }
     }
 }
