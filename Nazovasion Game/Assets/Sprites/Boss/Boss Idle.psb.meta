@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4559f1c8f4ad7f3479a464ddbf16efed
+guid: 1cecee4faaa09fc4a872f1ab078026be
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Key
+  - name: Ebene 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 373
-      height: 473
-    spriteID: b446dc2205fcf0540ab59f3f121ebb50
+      width: 934
+      height: 709
+    spriteID: 985aef739c3100f4cbefe55d2a1b3e43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,7 +114,51 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 1768, y: 965}
+    spritePosition: {x: 1235, y: 724}
+  - name: Ebene 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 946
+      y: 4
+      width: 908
+      height: 666
+    spriteID: ea00a8006f1918846ba05dd5c2e83067
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 946, y: 4}
+    spritePosition: {x: 2169, y: 1240}
+  - name: Bullet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 721
+      width: 934
+      height: 686
+    spriteID: 1707afb13fa62b146bb6a5efcea40fbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 721}
+    spritePosition: {x: 451, y: 1433}
   characterData:
     bones: []
     parts: []
@@ -145,16 +189,86 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Key
-    spriteName: Key
+  - name: Ebene 2
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: b446dc2205fcf0540ab59f3f121ebb50
-    layerID: 2
+    spriteID: a453c5c365c4eab4a97f761db462e531
+    layerID: 7
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Ebene 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8fb3646e12f75a740a2b66f8302577a6
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Ebene 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e33c3f4a571c3914e94a754d0dd899bc
+    layerID: 9
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Ebene 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e1aeb00ecdd26ae4590d6cfa00882d17
+    layerID: 10
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Ebene 6
+    spriteName: Ebene 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 985aef739c3100f4cbefe55d2a1b3e43
+    layerID: 13
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Ebene 7
+    spriteName: Ebene 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ea00a8006f1918846ba05dd5c2e83067
+    layerID: 14
+    mosaicPosition: {x: 946, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bullet
+    spriteName: Bullet
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1707afb13fa62b146bb6a5efcea40fbb
+    layerID: 11
+    mosaicPosition: {x: 4, y: 721}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ebene 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4a20ab5abe91414a9a1b91bcc1a0b71
+    layerID: 2
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   generateGOHierarchy: 0
