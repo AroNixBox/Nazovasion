@@ -7,8 +7,8 @@ public class ToolController : MonoBehaviour
     PlayerController playercon;
     Rigidbody2D rb;
 
-    [SerializeField] float offsetDistance = 1;
-    [SerializeField] float pickupZone = 1.5f;
+    [SerializeField] float offsetDistance = 1f;
+    [SerializeField] float pickupZone = 0.5f;
 
     private void Awake()
     {

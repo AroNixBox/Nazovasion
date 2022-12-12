@@ -32,14 +32,18 @@ public class PlayerHealth : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Door" && keys == 5f)
+        if (tag == "Player")
         {
-            Destroy(collision.gameObject);
-        }
-        if (collision.tag == "Key")
-        {
-            keys += 1f;
-            KeyCollect();
+            if (collision.tag == "Door" && keys == 5f)
+            {
+                Destroy(collision.gameObject);
+                StartCoroutine(GameIsEnding());
+            }
+            if (collision.tag == "Key")
+            {
+                keys += 1f;
+                KeyCollect();
+            }
         }
     }
 
@@ -54,8 +58,8 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
-            Time.timeScale = 0f;
             youLost.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
@@ -68,6 +72,6 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         gameOver.SetActive(true);
-
+        Time.timeScale = 0f;
     }
 }
