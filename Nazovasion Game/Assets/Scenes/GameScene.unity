@@ -3520,6 +3520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928707160554854, guid: e43c543a35456a344aaca7577db614c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 215
+      objectReference: {fileID: 0}
     - target: {fileID: 5603928707325346046, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8160,7 +8164,7 @@ Animator:
   m_GameObject: {fileID: 791024774}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 93840103115abcd4a970f3348fa75219, type: 2}
+  m_Controller: {fileID: 9100000, guid: c6fbff4033f1e8548b303a753bd2ff8b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8210,7 +8214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8090370947922306369, guid: 159f733fb4d29c24d84b866430b10ed1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8230,7 +8234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791024774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.8255, y: -3.0439, z: 0}
+  m_LocalPosition: {x: 4.522, y: 0.517, z: 0}
   m_LocalScale: {x: 0.1001347, y: 0.1001347, z: 0.1001347}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14921,6 +14925,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
   m_PrefabInstance: {fileID: 349455935}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1345212148
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345212140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cee992ddf6b411541b69fad42b6e1a89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1350191106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5603928706473751673, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
