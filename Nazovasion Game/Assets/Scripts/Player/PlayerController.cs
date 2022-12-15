@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     const string PLAYER_WALK_UP = "Player_Walk_Up";
     const string PLAYER_WALK_DOWN = "Player_Walk_Down";
 
+    [SerializeField] private AudioSource playerWalk;
+
     private void Start()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -57,6 +59,11 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetAxisRaw("Vertical") < 0)
         {
             ChangeAnimationState(PLAYER_WALK_UP);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
+        {
+            playerWalk.Play();
         }
 
     }

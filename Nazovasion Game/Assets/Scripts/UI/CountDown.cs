@@ -48,6 +48,7 @@ public class CountDown : MonoBehaviour
         if (currentTime <= 0)
         {
             youLost.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

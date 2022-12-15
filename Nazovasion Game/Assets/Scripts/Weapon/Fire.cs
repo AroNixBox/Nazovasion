@@ -26,6 +26,12 @@ public class Fire : MonoBehaviour
 
     private int ammoAmount;
 
+    //Sounds
+    [SerializeField] private AudioSource pistolShotSound;
+    [SerializeField] private AudioSource pistolReloadSound;
+    [SerializeField] private AudioSource shotgunShotSound;
+    [SerializeField] private AudioSource shotgunReloadSound;
+
     private void Start()
     {
         currentWeaponName = gameObject.name.Substring(0, name.IndexOf("_"));
@@ -52,6 +58,7 @@ public class Fire : MonoBehaviour
         if (weaponName == "Pistol" && Time.time > nextFire && ammoAmount > 0)
         {
             nextFire = Time.time + fireRate;
+            pistolShotSound.Play();
             var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
             spawnedBullet.AddForce(barrel.up * bulletSpeed);
             ammoAmount -= 1;
@@ -60,6 +67,7 @@ public class Fire : MonoBehaviour
         {
             //I lose one ammo
             ammoAmount -= 3;
+            shotgunShotSound.Play();
             //Shotgun firerate
             nextFire = Time.time + fireRateShotgun;
 
@@ -85,12 +93,16 @@ public class Fire : MonoBehaviour
     }
     IEnumerator WaitForSecondsPistol()
     {
+        pistolReloadSound.Play();
         yield return new WaitForSeconds(1);
         ammoAmount = 12;
     }
     IEnumerator WaitForSecondsShotgun()
     {
-        yield return new WaitForSeconds(3);
+        shotgunReloadSound.Play();
+        yield return new WaitForSeconds(1);
+        shotgunReloadSound.Play();
+        yield return new WaitForSeconds(1);
         ammoAmount = 12;
     }
 }
