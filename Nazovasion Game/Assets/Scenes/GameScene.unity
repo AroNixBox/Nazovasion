@@ -3563,7 +3563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -6990,7 +6990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -9470,7 +9470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -13700,7 +13700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -24004,7 +24004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -27376,7 +27376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.55
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
