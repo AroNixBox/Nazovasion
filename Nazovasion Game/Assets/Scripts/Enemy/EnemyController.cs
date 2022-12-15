@@ -12,6 +12,10 @@ public class EnemyController : MonoBehaviour
     //public Animator animator;
     public Slider enemyHealthBar;
 
+    public Transform targetToLookAt;
+    private Vector3 v_diff;
+    private float atan2;
+
     GameObject target;
     void Start()
     {
@@ -21,6 +25,15 @@ public class EnemyController : MonoBehaviour
         enemyHealthBar.value = enemyHP;
         enemyAttack = GetComponent<EnemyAttack>();
         rangeEnemyAttack = GetComponent<RangeEnemyAttack>();
+    }
+    void Update()
+    {
+        if (enemyHP > 0)
+        {
+            v_diff = (targetToLookAt.position - transform.position);
+            atan2 = Mathf.Atan2(v_diff.y, v_diff.x);
+            transform.rotation = Quaternion.Euler(0f, 0f, atan2 * Mathf.Rad2Deg);
+        }
     }
     public void TakeDamage(int damageAmount)
     {

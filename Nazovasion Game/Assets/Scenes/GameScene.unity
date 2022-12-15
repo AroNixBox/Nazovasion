@@ -1024,6 +1024,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1871,6 +1875,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4460,6 +4468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 943391675}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!114 &429480202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5611,6 +5620,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -7505,6 +7518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 714304365}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!114 &673885327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8361,6 +8375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 297364523}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!114 &755570280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9707,6 +9722,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -10011,6 +10030,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11674,6 +11697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 1939465906}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!4 &1062727102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
@@ -14487,19 +14511,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14511,11 +14535,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5603928707325346046, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603928707500805940, guid: e43c543a35456a344aaca7577db614c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999404
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603928707500805940, guid: e43c543a35456a344aaca7577db614c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.003452667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603928707500805940, guid: e43c543a35456a344aaca7577db614c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.396
       objectReference: {fileID: 0}
     - target: {fileID: 5603928707500805941, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -15574,6 +15610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 1065711975}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!4 &1345212147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
@@ -16233,6 +16270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 157976345}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!114 &1409803637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16899,6 +16937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyHealthBar: {fileID: 1721278581}
+  targetToLookAt: {fileID: 1299208539}
 --- !u!4 &1448892510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5603928706473751678, guid: e43c543a35456a344aaca7577db614c0, type: 3}
@@ -18444,6 +18483,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5603928706473751677, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
+      propertyPath: targetToLookAt
+      value: 
+      objectReference: {fileID: 1299208539}
     - target: {fileID: 5603928706473751678, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: m_RootOrder
       value: 11
