@@ -986,7 +986,7 @@ PrefabInstance:
       objectReference: {fileID: 248370936}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -1861,7 +1861,7 @@ PrefabInstance:
       objectReference: {fileID: 338303045}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -3563,7 +3563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -5602,7 +5602,7 @@ PrefabInstance:
       objectReference: {fileID: 1494332412}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -6990,7 +6990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -7629,7 +7629,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -7821,7 +7821,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -8874,7 +8874,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -9066,7 +9066,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -9470,7 +9470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -10434,7 +10434,7 @@ PrefabInstance:
       objectReference: {fileID: 2121883467}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -10778,7 +10778,7 @@ PrefabInstance:
       objectReference: {fileID: 255300698}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -12655,7 +12655,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -12847,7 +12847,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -13700,7 +13700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -16512,7 +16512,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -16704,7 +16704,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -17329,7 +17329,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -17521,7 +17521,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -17761,7 +17761,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -17953,7 +17953,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -19365,7 +19365,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -19557,7 +19557,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -20177,7 +20177,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -20369,7 +20369,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -21306,7 +21306,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -21498,7 +21498,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -21893,7 +21893,7 @@ PrefabInstance:
       objectReference: {fileID: 1666330083}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: speed
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -51708910232200259, guid: 9e8923c89c6577c409aae9021c8afb3a, type: 3}
       propertyPath: player
@@ -23730,7 +23730,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -23922,7 +23922,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -24014,7 +24014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -26370,7 +26370,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -26562,7 +26562,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -27386,7 +27386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5603928706473751667, guid: e43c543a35456a344aaca7577db614c0, type: 3}
       propertyPath: player
@@ -28479,7 +28479,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -28671,7 +28671,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

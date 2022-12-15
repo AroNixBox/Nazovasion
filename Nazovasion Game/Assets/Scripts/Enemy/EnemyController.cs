@@ -69,15 +69,15 @@ public class EnemyController : MonoBehaviour
             Object.Destroy(gameObject, 3.0f);
             if(tag == "Enemy")
             {
+                enemyAttack.enabled = false;
                 zombieAliveSound.Stop();
                 zombieDeathSound.Play();
-                enemyAttack.enabled = false;
             }
             if (tag == "RangedEnemy")
             {
+                rangeEnemyAttack.enabled = false;
                 rangeZombieAliveSound.Stop();
                 RangezombieDeathSound.Play();
-                rangeEnemyAttack.enabled = false;
             }
         }
     }

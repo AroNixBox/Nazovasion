@@ -26,5 +26,9 @@ public class Enemybullet : MonoBehaviour
             Destroy(gameObject);
             collision.GetComponent<PlayerHealth>().UpdateHealth(-5);
         }
+        if (collision.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 }
