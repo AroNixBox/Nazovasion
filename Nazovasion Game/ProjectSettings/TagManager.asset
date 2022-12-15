@@ -12,6 +12,13 @@ TagManager:
   - Door
   - Pistol
   - Shotgun
+  - tutorialmovement
+  - tutorialshotgun
+  - tutorialminimap
+  - tutorialkillzombies
+  - tutorialkillslimes
+  - tutorialinfogoal
+  - tutorialcollectkeys
   layers:
   - Default
   - TransparentFX
