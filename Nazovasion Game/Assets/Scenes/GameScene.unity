@@ -5481,7 +5481,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: de288509252ed10439d844560df927eb, type: 3}
       propertyPath: m_Name
-      value: Ebene 5
+      value: Plants
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: de288509252ed10439d844560df927eb, type: 3}
       propertyPath: m_RootOrder
@@ -28903,7 +28903,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: 911a12c1b0ee5a846b070c47870f2561, type: 3}
       propertyPath: m_Name
-      value: Ebene 3
+      value: Furniture
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 911a12c1b0ee5a846b070c47870f2561, type: 3}
       propertyPath: m_RootOrder
