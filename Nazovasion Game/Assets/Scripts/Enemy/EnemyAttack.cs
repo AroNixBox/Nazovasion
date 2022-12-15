@@ -45,6 +45,13 @@ public class EnemyAttack : MonoBehaviour
     {
         this.enabled = false;
         yield return new WaitForSeconds(1f);
-        this.enabled = true;
+        if (refScript.enemyHP > 0)
+        {
+            this.enabled = true;
+        }
+        else if (refScript.enemyHP < 0)
+        {
+            this.enabled = false;
+        }
     }
 }
