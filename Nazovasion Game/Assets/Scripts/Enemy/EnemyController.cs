@@ -9,7 +9,11 @@ public class EnemyController : MonoBehaviour
     RangeEnemyAttack rangeEnemyAttack;
     PlayerController player;
     public int enemyHP = 100;
-    //public Animator animator;
+    Animator animator;
+    const string ENEMY_WALK = "Enemy_Walk";
+    const string ENEMY_DEATH = "Enemy_Death";
+    const string RANGED_ENEMY_DEATH = "Ranged_Enemy_Death";
+    string currentAnimState;
     public Slider enemyHealthBar;
 
     //LookAtPlayer
@@ -39,6 +43,7 @@ public class EnemyController : MonoBehaviour
         enemyHealthBar.value = enemyHP;
         enemyAttack = GetComponent<EnemyAttack>();
         rangeEnemyAttack = GetComponent<RangeEnemyAttack>();
+        animator = gameObject.GetComponent<Animator>();
     }
     void Update()
     {
@@ -49,6 +54,20 @@ public class EnemyController : MonoBehaviour
             atan2 = Mathf.Atan2(v_diff.y, v_diff.x);
             transform.rotation = Quaternion.Euler(0f, 0f, atan2 * Mathf.Rad2Deg);
         }
+    }
+    void ChangeAnimationState(string newState)
+    {
+        //stop animation from interrupting itself
+        if (currentAnimState == newState)
+        {
+            return;
+        }
+
+        //Play new anitmation
+        animator.Play(newState);
+
+        currentAnimState = newState;
+
     }
     public void TakeDamage(int damageAmount)
     {
@@ -69,12 +88,14 @@ public class EnemyController : MonoBehaviour
             Object.Destroy(gameObject, 3.0f);
             if(tag == "Enemy")
             {
+                ChangeAnimationState(ENEMY_DEATH);
                 enemyAttack.enabled = false;
                 zombieAliveSound.Stop();
                 zombieDeathSound.Play();
             }
             if (tag == "RangedEnemy")
             {
+                ChangeAnimationState(RANGED_ENEMY_DEATH);
                 rangeEnemyAttack.enabled = false;
                 rangeZombieAliveSound.Stop();
                 RangezombieDeathSound.Play();
