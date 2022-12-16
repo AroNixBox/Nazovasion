@@ -27458,12 +27458,8 @@ PrefabInstance:
       value: Wand
       objectReference: {fileID: 0}
     - target: {fileID: -7864634107302052306, guid: 32c35c19f0d1f4a1f8b0616e10ab5b1e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.571
-      objectReference: {fileID: 0}
-    - target: {fileID: -7864634107302052306, guid: 32c35c19f0d1f4a1f8b0616e10ab5b1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.439
+      value: -8.11
       objectReference: {fileID: 0}
     - target: {fileID: -7864634107302052306, guid: 32c35c19f0d1f4a1f8b0616e10ab5b1e, type: 3}
       propertyPath: m_LocalPosition.y
