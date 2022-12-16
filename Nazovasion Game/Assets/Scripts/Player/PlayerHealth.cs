@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (tag == "Player")
         {
-            if (collision.tag == "Door" && keys == 5f)
+            if (collision.tag == "Door" && keys >= 5f)
             {
                 Destroy(collision.gameObject);
                 StartCoroutine(GameIsEnding());
@@ -58,8 +58,8 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
-            youLost.SetActive(true);
             Time.timeScale = 0f;
+            youLost.SetActive(true);
         }
     }
 
