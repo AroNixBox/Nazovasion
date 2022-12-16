@@ -93,29 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Ebene 12
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 912
-      width: 1213
-      height: 756
-    spriteID: 413dcbffa8a2fcc40834898513d93b6a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 912}
-    spritePosition: {x: 1869, y: 1533}
-  - name: Ebene 11
+  - name: Ebene 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -124,6 +102,28 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
+      width: 1792
+      height: 1973
+    spriteID: da70ce69bbeca59409bf43e45f48750c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 2036, y: 253}
+  - name: Ebene 11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1985
       width: 1227
       height: 900
     spriteID: db9aaa5eedeb06a4eb1ac336feb591da
@@ -135,8 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 741, y: 437}
+    uvTransform: {x: 4, y: 1985}
+    spritePosition: {x: 1423, y: 428}
   - name: Ebene 8
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +145,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1676
+      y: 2893
       width: 934
       height: 686
     spriteID: 508e6aeb22494024d9886cf0dfa29547
@@ -157,8 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1676}
-    spritePosition: {x: 321, y: 1533}
+    uvTransform: {x: 4, y: 2893}
+    spritePosition: {x: 458, y: 1412}
   characterData:
     bones: []
     parts: []
@@ -249,16 +249,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Ebene 12
-    spriteName: Ebene 12
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 413dcbffa8a2fcc40834898513d93b6a
-    layerID: 23
-    mosaicPosition: {x: 4, y: 912}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: Ebene 9
     spriteName: Ebene 9
     isGroup: 0
@@ -267,15 +257,15 @@ ScriptedImporter:
     layerID: 19
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Ebene 11
     spriteName: Ebene 11
     isGroup: 0
     parentIndex: -1
     spriteID: db9aaa5eedeb06a4eb1ac336feb591da
     layerID: 21
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 1985}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -295,7 +285,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 508e6aeb22494024d9886cf0dfa29547
     layerID: 18
-    mosaicPosition: {x: 4, y: 1676}
+    mosaicPosition: {x: 4, y: 2893}
     flatten: 0
     isImported: 1
     isVisible: 1
