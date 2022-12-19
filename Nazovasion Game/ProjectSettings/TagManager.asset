@@ -19,6 +19,7 @@ TagManager:
   - tutorialkillslimes
   - tutorialinfogoal
   - tutorialcollectkeys
+  - Chest
   layers:
   - Default
   - TransparentFX

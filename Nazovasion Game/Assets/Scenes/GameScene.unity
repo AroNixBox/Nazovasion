@@ -14486,7 +14486,7 @@ GameObject:
   - component: {fileID: 1166085352}
   m_Layer: 10
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14505,7 +14505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 8785695126753571906, guid: e1d475f3a3ae05d4a9dcc37fba011f08, type: 3}
   dropCount: 1
-  spread: 0.5
 --- !u!61 &1166085353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14855,7 +14854,7 @@ GameObject:
   - component: {fileID: 1173909300}
   m_Layer: 10
   m_Name: Capsule (4)
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14874,7 +14873,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 8785695126753571906, guid: e1d475f3a3ae05d4a9dcc37fba011f08, type: 3}
   dropCount: 1
-  spread: 0.5
 --- !u!61 &1173909301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17194,7 +17192,7 @@ GameObject:
   - component: {fileID: 1335165481}
   m_Layer: 10
   m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17213,7 +17211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 8785695126753571906, guid: e1d475f3a3ae05d4a9dcc37fba011f08, type: 3}
   dropCount: 1
-  spread: 0.5
 --- !u!61 &1335165482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22501,7 +22498,7 @@ GameObject:
   - component: {fileID: 1639322010}
   m_Layer: 10
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22520,7 +22517,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 8785695126753571906, guid: e1d475f3a3ae05d4a9dcc37fba011f08, type: 3}
   dropCount: 1
-  spread: 0.5
 --- !u!61 &1639322011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29454,7 +29450,7 @@ GameObject:
   - component: {fileID: 2135618344}
   m_Layer: 10
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29473,7 +29469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 8785695126753571906, guid: e1d475f3a3ae05d4a9dcc37fba011f08, type: 3}
   dropCount: 1
-  spread: 0.5
 --- !u!61 &2135618345
 BoxCollider2D:
   m_ObjectHideFlags: 0

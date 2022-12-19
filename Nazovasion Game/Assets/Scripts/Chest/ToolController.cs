@@ -15,26 +15,33 @@ public class ToolController : MonoBehaviour
         playercon = GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
     }
-    private void Update()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetKeyDown("space"))
+        if (collision.gameObject.tag == "Chest")
         {
-            UseTool();
+            StartCoroutine(UnlockChest());
         }
+
     }
     private void UseTool()
     {
         Vector2 pos = rb.position + playercon.lastPost * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(pos, pickupZone);
 
-        foreach(Collider2D c in colliders)
+        foreach (Collider2D c in colliders)
         {
             Tool hit = c.GetComponent<Tool>();
-            if(hit != null)
+            if (hit != null)
             {
                 hit.Hit();
                 break;
             }
         }
+    }
+    IEnumerator UnlockChest()
+    {
+        yield return new WaitForSeconds(3);
+        UseTool();
     }
 }
