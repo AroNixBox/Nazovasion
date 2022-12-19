@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class test5 : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        StartCoroutine(DestroyPlattform1());
+        if (collision.tag == "Player")
+        {
+            StartCoroutine(DestroyPlattform1());
+        }
 
     }
     IEnumerator DestroyPlattform1()
