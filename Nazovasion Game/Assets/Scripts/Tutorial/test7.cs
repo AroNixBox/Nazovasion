@@ -13,7 +13,7 @@ public class test7 : MonoBehaviour
     }
     IEnumerator DestroyPlattform1()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(8);
         Destroy(gameObject);
     }
 }

@@ -41,7 +41,7 @@ public class ToolController : MonoBehaviour
     }
     IEnumerator UnlockChest()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         UseTool();
     }
 }
